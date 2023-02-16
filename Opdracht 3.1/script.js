@@ -1,7 +1,7 @@
 
 let text = document.getElementById("text")
 let budget = 50;
-let product = 60;
+let product = prompt();
 
 
 if (budget > product){
