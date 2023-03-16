@@ -1,8 +1,8 @@
 let inputField = document.getElementById("inputField")
-let btn = document.getElementById("addToDo")
+let button = document.getElementById("addToDo")
 let container = document.getElementById("toDoContainer")
 
-btn.addEventListener("click",function(){
+button.addEventListener("click",function(){
     //aanmaken van een p element oftewel een paragraaf
     //dit zit opgeslagen in de variabel paragraph
     let paragraph = document.createElement("p")
@@ -17,5 +17,14 @@ btn.addEventListener("click",function(){
 
     //input wordt leeggemaakt nadat toegevoegd aan paragraaf
     inputField.value = "";
+
+    paragraph.addEventListener("click", function(){
+        paragraph.style.textDecoration = "line-trough";
+    })
+
+    paragraph.addEventListener("dblclick", function(){
+        container.removeChild(paragraph);
+    })
+
 
 })
