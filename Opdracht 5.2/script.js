@@ -1,7 +1,14 @@
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+const close = document.querySelector(".closebtn");
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+window.addEventListener("mousemove", function(e){
+  
+  if (e.clientX == 0) {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  close.addEventListener('click', function(){
+    document.getElementById("mySidenav").style.width = "0%";
+
+  })
+
+})
