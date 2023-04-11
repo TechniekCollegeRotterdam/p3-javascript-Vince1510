@@ -1,14 +1,9 @@
-const close = document.querySelector(".closebtn");
+window.onscroll = function() {scrollFunction()};
 
-window.addEventListener("mousemove", function(e){
-  
-  if (e.clientX == 0) {
-    document.getElementById("mySidenav").style.width = "100%";
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
   }
-
-  close.addEventListener('click', function(){
-    document.getElementById("mySidenav").style.width = "0%";
-
-  })
-
-})
+}
