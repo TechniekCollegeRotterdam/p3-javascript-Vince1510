@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+
 #displayArea {
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +14,7 @@
 
 body {
   background: #f6f5f7;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +45,7 @@ button {
   background: linear-gradient(to top, #ff9966 0%, #ff5e62 100%);
   color: #fff;
   font-size: 12px;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   padding: 12px 45px;
   letter-spacing: 1px;
@@ -62,7 +64,7 @@ button:active {
 button.nextSide-btn {
   background-color: transparent;
   border-color: #fff;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
 }
 
 button.nextSide-btn:hover {
@@ -135,7 +137,7 @@ form .add-link {
   padding: 15px 0;
   font-size: 14px;
   color: grey;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
 }
 
 .form-control input:focus,
@@ -157,6 +159,7 @@ form .add-link {
   color: #ff5e62;
   transform: translateY(-30px);
 }
+
 .container {
   background-color: #fff;
   border-radius: 14px;
@@ -170,11 +173,11 @@ form .add-link {
 }
 
 .form-container {
-  
   width: 100%;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
+
 #image {
   display: none;
 }
