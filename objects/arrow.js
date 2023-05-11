@@ -31,9 +31,13 @@
 
 const marvels = ['Guardians of the galaxy', 'Black panther', 'The avengers', 'Spider-man']
 
+const addMarvels = () => {
 
+    marvels.push("spiderman")
+};
+
+addMarvels()
 
 for(let marvel of marvels){
     console.log(marvel);
 }
-
