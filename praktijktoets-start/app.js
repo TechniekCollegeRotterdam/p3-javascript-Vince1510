@@ -1,57 +1,27 @@
-document.getElementById("signUp").addEventListener("click", showImage);
+document.getElementById("signUp").addEventListener("click", function () {
+    signIn();
+});
 
 function showImage() {
-    var element = document.getElementById("img");
+    var element = document.getElementById("imgCheck");
     element.classList.add("sign-in-container");
-    
 }
 
-
-
 function signIn() {
+    document.getElementById("displayAreaFullName").innerHTML = "Welkom " + document.getElementById("fullNameTextBox").value;
+    document.getElementById("displayAreaPhoneNumber").innerHTML = "U heeft een bevestiging ontvangen op: " + document.getElementById("phoneNumberTextBox").value;
+    document.getElementById("displayAreaEmail").innerHTML = "Ter verificatie sturen wij een bericht naar: " + document.getElementById("emailTextBox").value;
+    document.getElementById("title").innerHTML = "";
+    document.getElementById("paragraph").innerHTML = "";
     const element = document.getElementById("form");
     element.remove();
+    showImage();
+}
 
-    
-    
-  }
-  const text = document.getElementById('text');
+const text = document.getElementById('text');
 
-
-  
-  text.addEventListener('click', function() {
+text.addEventListener('click', function () {
     this.textContent = 'U heeft een bevestiging ontvangen op: ';
-  });
-
-
-  function displayValue() {
-    var textBoxValue = document.getElementById("myTextBox").value;
-    document.getElementById("displayArea").innerHTML = "Welkom " + textBoxValue;
-  }
-
-
-  function displayValue1() {
-    var textBoxValue = document.getElementById("myTextBox1").value;
-    document.getElementById("displayArea1").innerHTML = "U heeft een bevestiging ontvangen op: " + textBoxValue;
-  }
-
-
-  function displayValue2() {
-    var textBoxValue = document.getElementById("myTextBox2").value;
-    document.getElementById("displayArea2").innerHTML = "Ter verificatie sturen wij een bericht naar: " + textBoxValue;
-  }
-
+});
 
 const myButton = document.getElementById("signUp");
-
-
-
-function removeTextTop() {
-    document.getElementById("text5").innerHTML = "";
-  }
-
-  function removeTextBottom() {
-    document.getElementById("text6").innerHTML = "";
-  }
-
-

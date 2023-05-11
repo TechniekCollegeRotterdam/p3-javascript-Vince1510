@@ -16,37 +16,33 @@
     <section class="form-container sign-up-container">
       <form id="form" name="register">
         <h1 id="removeItem" class="form-title">Register</h1>
-        
         <div class="form-control">
-          <input type="text" required id="myTextBox" placeholder="Full name" />
+          <input type="text" required id="fullNameTextBox" placeholder="Full name" />
         </div>
         <div class="form-control">
-          <input type="text" required id="myTextBox2" name="phone" placeholder="Phone number" />
+          <input type="text" required id="phoneNumberTextBox" name="phone" placeholder="Phone number" />
         </div>
         <div class="form-control">
-          <input type="email" required id="myTextBox1" placeholder="Email" />
+          <input type="email" required id="emailTextBox" placeholder="Email" />
         </div>
         <div class="form-control">
-          <input type="password" required id="password" placeholder="Password" />
+          <input type="password" required id="passwordTextBox" placeholder="Password" />
         </div>
-        <button onclick="displayValue(); displayValue1(); displayValue2(); signIn() ;removeTextTop();removeTextBottom() ;" id="signUp">Sign Up</button>
+        <button id="signUp">Sign Up</button>
       </form>
     </section>
     <section class="form-container sign-in-container">
-      <img id="img" src="./img/check.png" alt="">
+      <img id="imgCheck" src="./img/check.png" alt="">
       </form>
     </section>
     <section class="overlay-container">
       <div class="overlay">
         <div class="overlay-panel overlay-right">
-
-          <h1 id="text5" class="title">Hello, Geek!</h1>
-          <p id="displayArea"></p>
-          <p id="displayArea1"></p>
-          <p id="displayArea2"></p>
-
-
-          <p id="text6" class="paragraph">Let's create your account</p>
+          <h1 id="title" class="title">Hello, Geek!</h1>
+          <p id="displayAreaFullName"></p>
+          <p id="displayAreaPhoneNumber"></p>
+          <p id="displayAreaEmail"></p>
+          <p id="paragraph" class="paragraph">Let's create your account</p>
         </div>
       </div>
     </section>
