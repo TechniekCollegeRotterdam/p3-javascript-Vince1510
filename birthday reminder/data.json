@@ -1,0 +1,13 @@
+[
+    {
+      "name": "John Doe",
+      "age": 30,
+      "image": "img/john.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "age": 25,
+      "image": "img/jane.jpg"
+    }
+  ]
+  
