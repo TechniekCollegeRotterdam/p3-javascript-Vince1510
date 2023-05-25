@@ -14,9 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const personElement = document.createElement('div');
       personElement.classList.add('person');
       personElement.innerHTML = `
+      <div class="card">
+        <img class="img" src="${person.image}">
         <h3>${person.name}</h3>
         <p>Age: ${person.age}</p>
-        <img src="${person.image}">
+      </div>      
       `;
       container.appendChild(personElement);
     });
